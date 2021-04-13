@@ -65,12 +65,12 @@ if (isset($_SESSION['username'])) {
         <?php endif ?>
         <br>
         <div  class="w3-content" style="max-width:700px" align=center>
-            <lable for="username">Username</lable>
-            <input class="w3-input w3-padding-16 w3-border" placeholder="username" type="text" name="username">
+            <lable for="username"><b> Username</b></lable>
+            <input class="w3-input w3-padding-16 w3-border" placeholder="Username" type="text" name="username">
         </div>
         <br>
         <div  class="w3-content" style="max-width:700px" align=center>
-            <lable for="password">Password</lable>
+            <lable for="password"><b> Password</b></lable>
             <input class="w3-input w3-padding-16 w3-border" placeholder="Password" type="password" name="password">
         </div>
         <br>

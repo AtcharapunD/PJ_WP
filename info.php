@@ -27,14 +27,14 @@ include('sever.php');
     <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-black w3-center">
       <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">PHUANGNGERN RENTAL</h1>
       <h5 class="w3-hide-large" style="white-space:nowrap">PHUANGNGERN RENTAL</h5>
-      <h3 class="w3-hide-medium w3-hide-small">ROOM AND HOUSE</h3>
+      <h3 class="w3-hide-medium w3-hide-small">INFORMATION</h3>
     </div>
-  <!--
+  
     <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-      <a href="roomcheck.php" class="w3-bar-item w3-button">Check Room</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="index.php" class="w3-bar-item w3-button">Home</a>
+      
     </div>
-  -->
+  
   </header>
 
   <div class="sidebar">
@@ -56,69 +56,85 @@ include('sever.php');
     </div>
   </div>
 
+  <br>
   <div class="header">
-    <h2>Contract</h2>
+    <h2 align=center>Contract</h2>
   </div>
 
   <form method="post" action="info_bd.php">
-    <div class="input-group">
-      <lable for="name">Name/ชื่อ </lable>
-      <input type="text" name="name" placeholder="Your name..">
-    </div>
-    <div class="input-group">
-      <lable for="lastname">Lastname/นามสกุล </lable>
-      <input type="text" name="lastname" placeholder="Your Lastname..">
-    </div>
-    <div class="input-group">
-      <lable for="id_code">ID/เลขบัตรประชาชน </lable>
-      <input type="text" name="id_code" placeholder="ID..">
-    </div>
-    <div class="input-group">
-      <lable for="address">Address/ที่อยู่ </lable>
-      <input type="text" name="address" placeholder="Address..">
-    </div>
-    <div class="input-group">
-      <lable for="phone_number">Phone_number/เบอร์โทรศัพท์ </lable>
-      <input type="text" name="phone_number" placeholder="Your Number..">
-    </div>
-    <div class="input-group">
-      <lable for="date">DATE/วันที่ </lable>
-      <input type="text" name="date" placeholder="Your date..">
-    </div>
-    <div class="input-group">
-      <lable for="room">ROOM/ห้อง </lable>
-      <select id="room" name="room">
-        <?php
-        $sql = "SELECT * FROM room WHERE `status`= 'ว่าง'";
-        $re = mysqli_query($conn, $sql);
-        ?>
-        <?php
-        while ($row = mysqli_fetch_array($re)) { ?>
-          <option value="<?php echo $row['number_room'] ?>"> <?php echo $row['number_room'] ?> </option>
-        <?php } ?>
-      </select>
-    </div>
-    ชื่อผู้ติดต่อฉุกเฉิน
-    <div class="input-group">
-      <lable for="emergency_name">Name/ชื่อ-นามสกุล </lable>
-      <input type="text" name="emergency_name" placeholder="Your name..">
-    </div>
-    <div class="input-group">
-      <lable for="relation">Relationship/ความสัมพันธ์ </lable>
-      <select id="relation" name="relation">
-        <option value="บิดา"> บิดา </option>
-        <option value="มารดา"> มารดา </option>
-        <option value="ญาติ"> ญาติ </option>
-      </select>
-    </div>
-    <div class="input-group">
-      <lable for="emergency_number">Phone_number/เบอร์โทรศัพท์ </lable>
-      <input type="text" name="emergency_number" placeholder="Your Number..">
-    </div>
-    <div class="input-group">
-      <button type="submit" name="submit" class="btn">Submit</button>
-    </div>
+    <table>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="name"><b> Name/ชื่อ </b></lable>
+        <input class="w3-input w3-padding-16 w3-border" type="text" name="name" placeholder="Your name..">
+      </div>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="lastname"><b> Lastname/นามสกุล </b></lable>
+        <input class="w3-input w3-padding-16 w3-border" type="text" name="lastname" placeholder="Your Lastname..">
+      </div>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="id_code"><b> ID/เลขบัตรประชาชน </b></lable>
+        <input class="w3-input w3-padding-16 w3-border" type="text" name="id_code" placeholder="ID..">
+      </div>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="address"><b> Address/ที่อยู่ </b></lable>
+        <input class="w3-input w3-padding-16 w3-border" type="text" name="address" placeholder="Address..">
+      </div>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="phone_number"><b> Phone_number/เบอร์โทรศัพท์ </b></lable>
+        <input class="w3-input w3-padding-16 w3-border" type="text" name="phone_number" placeholder="Your Number..">
+      </div>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="date"><b> DATE/วันที่ </b></lable>
+        <input class="w3-input w3-padding-16 w3-border" type="text" name="date" placeholder="Your date..">
+      </div>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="room"><b> ROOM/ห้อง </b></lable>
+        <select class="w3-input w3-padding-16 w3-border" id="room" name="room">
+          <?php
+          $sql = "SELECT * FROM room WHERE `status`= 'ว่าง'";
+          $re = mysqli_query($conn, $sql);
+          ?>
+          <?php
+          while ($row = mysqli_fetch_array($re)) { ?>
+            <option value="<?php echo $row['number_room'] ?>"> <?php echo $row['number_room'] ?> </option>
+          <?php } ?>
+        </select>
+      </div>
+      <br>
+      <h4 align=center> ชื่อผู้ติดต่อฉุกเฉิน</h4>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="emergency_name"><b> Name/ชื่อ-นามสกุล </b></lable>
+        <input class="w3-input w3-padding-16 w3-border" type="text" name="emergency_name" placeholder="Your name..">
+      </div>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="relation"><b> Relationship/ความสัมพันธ์ </b></lable>
+        <select class="w3-input w3-padding-16 w3-border" id="relation" name="relation">
+          <option value="บิดา"> บิดา </option>
+          <option value="มารดา"> มารดา </option>
+          <option value="ญาติ"> ญาติ </option>
+        </select>
+      </div>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <lable for="emergency_number"><b> Phone_number/เบอร์โทรศัพท์ </b></lable>
+        <input class="w3-input w3-padding-16 w3-border" type="text" name="emergency_number" placeholder="Your Number..">
+      </div>
+      <br>
+      <div class="w3-content" style="max-width:700px" align=center>
+        <button class="w3-button w3-black" type="submit" name="submit" class="btn"><b>Submit </b></button>
+      </div>
+    </table>
   </form>
+  <br>
+  <br>
 
   <script>
     function openNav() {
