@@ -1,0 +1,98 @@
+<!---->
+
+------------------------------------------------------
+
+<div class="w3-container">
+        <div class="w3-display-container w3-text-white">
+            <img src="BG6.jpg" alt="Lights" style="width:100%">
+            <div class="w3-padding w3-display-topleft">Top Left</div>
+            <div class="w3-padding w3-display-topright">Top Right</div>
+            <div class="w3-padding w3-display-bottomleft">Bottom Left</div>
+            <div class="w3-padding w3-display-bottomright">Bottom Right</div>
+            <div class="w3-padding w3-display-topmiddle">Top Mid</div>
+            <div class="w3-padding w3-display-left">Left</div>
+            <div class="w3-padding w3-display-right">Right</div>
+            <div class="w3-padding w3-display-middle w3-xxlarge">Middle</div>
+            <div class="w3-padding w3-display-bottommiddle">Bottom Mid</div>
+        </div>
+    </div>
+
+-----------------------------------------------------
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Open from 6am to 5pm</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">15 Adr street, 5015</span>
+        </div>
+    </header>
+
+    -----------------------------------------------------
+
+    <img src="images/BG6.jpg" alt="Home" style="width:100%">
+    
+    -------------------------------------------------------
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-black">WHERE</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-black">LOGIN</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="w3-display-container w3-content w3-center" style="max-width:1920px">
+        <img class="images" src="images/BG6.jpg" alt="BGHead" width="1920" height="600">
+        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-black w3-center">
+            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">PHUANGNGERN RENTAL</h1>
+            <h5 class="w3-hide-large" style="white-space:nowrap">PHUANGNGERN RENTAL</h5>
+            <h3 class="w3-hide-medium w3-hide-small">YOUR WELCOME</h3>
+        </div>   
+    </header>
+
+------------------------------------------
+
+<?php if (isset($_SESSION['username'])) : ?>
+                <div class="w3-col s3">
+                    <button class="w3-button w3-block w3-black" class="btn login"><a href="index.php?logout=1">LOGOUT</a></button>
+                </div>
+            <?php endif ?>
+
+---------------------------------------------
+
+<i class="fas fa-map-marked-alt"></i> มายแมพ
+
+<i class="fas fa-sign-in-alt"></i> เข้าระบบ
+
+<i class="fas fa-user"></i> ผู้ใช้
+
+<i class="fas fa-list"></i>
+<i class="fas fa-list-alt"></i>
+
+<i class="fas fa-id-card"></i> การ์ด
+<i class="fas fa-house-user"></i> ผู้ใช้รูปบ้าน
+<i class="fas fa-home"></i> ปุมโฮม
+
+<i class="fas fa-info-circle"></i> ไอคอน
+
+---------------------------------------------
+
+w3-panel w3-leftbar w3-light-grey
+
+
+-------------------------------------------
