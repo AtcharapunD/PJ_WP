@@ -10,9 +10,6 @@ include('sever.php');
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--CSS-->
-  <link rel="stylesheet" href="css/roomnhouse.css">
-
   <!-- font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -62,10 +59,10 @@ include('sever.php');
 
   <br>
   <br>
-  <table align="center">
+  <table style="max-width:700px" align="center">
     <div class="row">
       <div class="column">
-        <table>
+        <table style="max-width:700px" align="center">
           <tr>
             <th>No.Room</th>
             <th>Type Room</th>
@@ -94,6 +91,22 @@ include('sever.php');
   <br>
 
   <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";

@@ -173,7 +173,7 @@ tr:nth-child(even) {
 /*---------------------------*/
 .alert {
   padding: 20px;
-  background-color: #f44336;
+  background-color: #A9A9A9;
   color: white;
   text-align-last: center;
 }
@@ -204,7 +204,7 @@ tr:nth-child(even) {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: gray;
   color: white;
   cursor: pointer;
   padding: 15px;
