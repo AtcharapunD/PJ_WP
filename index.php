@@ -45,7 +45,6 @@ if (isset($_GET['logout'])) {
             <a href="index.php"><i class="fas fa-home"></i> About</a>
             <a href="roomnhouse.php"><i class="fas fa-info-circle"></i> Room</i></a>
             <a href="statment.php"><i class="fas fa-inbox"></i> Statement</i></a>
-            <a href="#"><i class="fas fa-envelope"></i> Contact</i></a>
             <?php if (!isset($_SESSION['username'])) : ?>
                 <!--<button class="btn login">--><a href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
                 <!--</button>-->

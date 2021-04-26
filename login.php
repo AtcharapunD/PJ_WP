@@ -40,7 +40,6 @@ if (isset($_SESSION['username'])) {
             <a href="index.php"><i class="fas fa-home"></i> About</a>
             <a href="#"><i class="fas fa-info-circle"></i> Room</i></a>
             <a href="#"><i class="fas fa-inbox"></i> Services</i></a>
-            <a href="#"><i class="fas fa-envelope"></i> Contact</i></a>
             <a href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
         </div>
     </div>

@@ -33,7 +33,6 @@ session_start();
 
     <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
       <a href="roomcheck.php" class="w3-bar-item w3-button">Check Room</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
   </header>
 
@@ -43,7 +42,6 @@ session_start();
       <a href="index.php"><i class="fas fa-home"></i> About</a>
       <a href="roomnhouse.php"><i class="fas fa-info-circle"></i> Room</i></a>
       <a href="statment.php"><i class="fas fa-inbox"></i> Statement</i></a>
-      <a href="#"><i class="fas fa-envelope"></i> Contact</i></a>
       <?php if (!isset($_SESSION['username'])) : ?>
         <!--<button class="btn login">--><a href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
         <!--</button>-->

@@ -173,7 +173,7 @@ tr:nth-child(even) {
 /*---------------------------*/
 .alert {
   padding: 20px;
-  background-color: #A9A9A9;
+  background-color: #d10000;
   color: white;
   text-align-last: center;
 }
